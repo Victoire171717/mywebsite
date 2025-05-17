@@ -1,0 +1,111 @@
+<html>
+<head>
+  <title>Forml2</title>
+</head>
+  
+   <style>
+  .part{
+    background-color: white;
+    margin-bottom: 20px;
+      padding: 15px;
+      border-left: 5px solid beige;
+      border-radius: 5px;
+  }
+
+  .ri {
+    float: right;
+  }
+  
+  .buttons {
+      text-align: center;
+     border: hidden
+    }
+
+    .buttons input {
+
+      cursor: pointer
+    }
+  .Buttons .Envoyer{
+    background-color:green; color:black;
+     }
+  .Buttons .Effacer{
+    background-color:beige; color:black;
+  }
+  .Buttons .Quitter{
+    background-color:red; color:black;
+  }
+  </style>
+
+<body bgcolor="skyblue">
+  <h1 style="color: yellow"><marquee>ENREGISTREMENTS DES ETUDIANTS</marquee></h1>
+  
+  <div class="part">
+  <h2 style="color:skyblue"><center>Etat Civil</center></h2>
+  <form method="post" action="traitement.php" class="form-grid">
+  <label for="nom">Nom</label>
+  <input type="text" name="nom" id="nom" /> 
+
+<div class="ri">
+  <label for="prenom">Prénoms</label>
+  <input type="text" name="prenom" id="prenom" />
+</div>
+</br>  </br> 
+  <label for="sexe">Sexe</label>
+  <select name="sexe" id="sexe">
+    <option value="Masculin">Masculin</option>
+    <option value="Féminin">Féminin</option>
+  </select>
+
+<div class="ri">
+  <label for="email">Adresse E-mail</label>
+  <input type="email" name="email" id="email" />
+</div>
+</br>  </br> 
+  <label for="contact">Contact</label>
+  <input type="text" name="contact" id="contact" />
+
+<div class="ri">
+  <label for="date_naissance">Date de naissance</label>
+  <input type="date" name="date_naissance" id="date_naissance" />
+</div>
+</form>
+  </div>
+  
+    <div class="part">
+  <h2 style="color:skyblue"><center>Diplomes</center></h2>
+  <center>
+  <input type="checkbox" name="id" id="CEP" style="display: inline-block;" />CEP
+  <input type="checkbox" name="id" id="BEPC" style="display: inline-block;" />BEPC
+  <input type="checkbox" name="id" id="BAC" style="display: inline-block;" />BAC
+  </center>  
+    </div>
+  
+    <div class="part">
+   <h2 style="color:skyblue"><center>ADRESSE</center></h2>  
+   <form method="post"action="traitement.php">
+    <center> <input type="text"name=" "/></br></br> </center>
+  </form>
+  </div>
+    
+    <div class="part">
+  <h2 style="color:skyblue"><center>Pays</center></h2>
+  <form method="post"action="traitement.php">
+<p>
+  <center>Choisissez un pays:</center><br/>
+
+<input type="radio"name="pays"value="Sénégal"id="Sénégal" style="display: inline-block;"/><label for="Sénégal">Sénégal</label>
+<div class="ri"> <input type="radio"name="pays"value="Bénin"id="Bénin" style="display: inline-block;"/><label for="Bénin">Bénin</label> </div> <br/>
+<input type="radio"name="pays"value="France"id="France" style="display: inline-block;" /><label for="France">France</label>
+<div class="ri"> <input type="radio"name="pays"value="Maroc"id="Maroc" style="display: inline-block;" /><label for="Maroc">Maroc</label> </div> </br>
+
+</p>
+  </form>
+    </div>
+  
+   <div class="buttons">
+      <input type="submit" value="Envoyer" class="envoyer">
+      <input type="reset" value="Effacer" class="effacer">
+      <input type="button" value="Quitter" class="quitter" onclick="window.close();">
+   </div>
+  </body>
+</html>

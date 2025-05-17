@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: 'Trebuchet MS', sans-serif;
+                background-color: #fff;
+                padding: 20px;
+            }
+            body {
+      background: linear-gradient(-45deg, rgb(53, 189, 243), aqua, #bbe44c, purple);
+      background-size: 400% 400%;
+      animation: gradientShift 20s ease infinite;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes gradientShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      background: transparent url('https://raw.githubusercontent.com/KunalTanwar/Awesome-Stars-Effect/master/stars.png') repeat top center;
+      animation: moveStars 100s linear infinite;
+      opacity: 0.6;
+      z-index: 0;
+    }
+
+    @keyframes moveStars {
+      from {background-position: 0 0;}
+      to {background-position: -10000px 5000px;}
+    }
+
+    .section {
+      z-index: 1;
+      padding: 20px;
+      box-sizing: border-box;
+      color: #333;
+    }
+     h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: white;
+      text-shadow: 0 0 5% blueviolet, 0 0 15% rgb(151, 16, 151), 0 0 25% rgba(194, 7, 194, 0.822);
+      z-index: 1;
+      position: relative;
+      animation: floatText 3s ease-in-out infinite;
+    }
+
+    @keyframes floatText {
+      0%, 100% {transform: translateY(0);}
+      50% {transform: translateY(-10px);}
+    }
+        </style>
+    </head>
+    <body>
+        
+  <div class="stars">
+    <h1>
+      <br> <br>
+      <center>🥰 My Website 🥰 </center>
+    </h1>
+  </div>
+    </body>
+</html>

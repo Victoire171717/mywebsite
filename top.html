@@ -1,0 +1,35 @@
+<html>
+    <head>
+      <title>top</title>
+      <style>
+         body{
+            background-color: white;
+        }
+        .marquee{
+            background-color: black;
+            font-size: 2em;
+            font-weight: bold;
+            animation: defilement 10s linear infinite, couleurs 3s ease-in-out infinite;
+        }
+        @keyframes defilement{
+            0%{
+                left: 100%;
+            }
+            100%{
+                left: -100%;
+            }
+        }
+        @keyframes couleurs{
+            0%{color: plum; text-shadow: 0 0 10 px plum;}
+            25%{color: yellow; text-shadow: 0 0 10 px yellow;}
+            50%{color: lime; text-shadow: 0 0 10 px lime;}
+            75%{color: cyan; text-shadow: 0 0 10 px cyan;}
+            100%{color: plum; text-shadow: 0 0 10 px plum;}
+        }
+        </style>
+    </head>
+    <body>
+        <a href="https://www.etudiant.uac.bj" target="_blank"><img src="Screenshot_20250423-215820_1.png" alt="logo uac" style="float: left;" height="85" width="90"></a>
+        <a href="https://www.eneam.uac.bj" target="_blank"><img src="Screenshot_20250423-215739_1.png" alt="logo eneam" style="float: right" height="85" width="90"></a>
+        <center><div class="marquee"><h3><em>WELCOME !</em></h1></div></center>
+    </body>
